@@ -21,7 +21,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('contact/',core_views.contact,name = 'contacto'),
-    path('services',services_views.services,name = 'servicios'),
+    path('services/',services_views.services,name = 'servicios'),
     path('',core_views.index,name = 'inicio'),
     path('info/',core_views.info,name = 'informacion'),
     path('admin/', admin.site.urls),
